@@ -9,7 +9,7 @@
   <body>
     <header class="page-header">
       <nav class="navigation">
-        <a class="page-header-logo" href="">
+        <a class="page-header-logo" href="index.html">
           <img src="#" alt="Логотип сайта">
         </a>
         <ul class="navigation-list navigation-site">
@@ -20,7 +20,7 @@
             <a class="navigation-link" href="#">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link navigation-link-current" href="catalog.html">Гостиницы</a>
+            <a class="navigation-link navigation-link-current">Гостиницы</a>
           </li>
         </ul>
         <ul class="navigation-list navigation-user">
@@ -139,13 +139,13 @@
           <option value="popular">Сначала популярные</option>
           <option value="expensive">Сначала дорогие</option>
         </select>
-        <a href="#" class="catalog-view-button button-tiles selected">
+        <a class="catalog-view-button catalog-view-button-tiles catalog-view-button-selected">
           <span class="visually-hidden">Показать карточки</span>
         </a>
-        <a href="#" class="catalog-view-button button-slideshow">
+        <a href="#" class="catalog-view-button catalog-view-button-slideshow">
           <span class="visually-hidden">Показать слайдшоу</span>
         </a>
-        <a href="#" class="catalog-view-button button-list">
+        <a href="#" class="catalog-view-button catalog-view-button-list">
           <span class="visually-hidden">Показать списком</span>
         </a>
 
@@ -157,7 +157,7 @@
             <span class="catalog-card-type">Гостиница</span>
             <span class="catalog-card-price">От 4000 ₽</span>
             <a class="catalog-card-button button-details" href="#">Подробнее</a>
-            <a class="catalog-card-button button-favorites" href="#">В избранное</a>
+            <button class="catalog-card-button button-favorites">В избранное</button>
             <div class="catalog-card-rating-stars">
               <span class="rating-star checked"></span>
               <span class="rating-star checked"></span>
@@ -175,7 +175,7 @@
             <span class="catalog-card-type">Гостиница</span>
             <span class="catalog-card-price">От 5000 ₽</span>
             <a class="catalog-card-button button-details" href="#">Подробнее</a>
-            <a class="catalog-card-button button-favorites selected" href="#">В избранном</a>
+            <button class="catalog-card-button button-favorites-selected">В избранном</button>
             <div class="catalog-card-rating-stars">
               <span class="rating-star checked"></span>
               <span class="rating-star checked"></span>
@@ -193,7 +193,7 @@
             <span class="catalog-card-type">Гостиница</span>
             <span class="catalog-card-price">От 2500 ₽</span>
             <a class="catalog-card-button button-details" href="#">Подробнее</a>
-            <a class="catalog-card-button button-favorites" href="#">В избранное</a>
+            <button class="catalog-card-button button-favorites">В избранное</button>
             <div class="catalog-card-rating-stars">
               <span class="rating-star checked"></span>
               <span class="rating-star checked"></span>
@@ -211,7 +211,7 @@
             <span class="catalog-card-type">Гостиница</span>
             <span class="catalog-card-price">От 1500 ₽</span>
             <a class="catalog-card-button button-details" href="#">Подробнее</a>
-            <a class="catalog-card-button button-favorites" href="#">В избранное</a>
+            <button class="catalog-card-button button-favorites">В избранное</button>
             <div class="catalog-card-rating-stars">
               <span class="rating-star checked"></span>
               <span class="rating-star checked"></span>
@@ -250,13 +250,13 @@
 
     <footer class="page-footer">
       <section class="footer-newsletter">
-        <h2 class="page-footer-title">Подпишитесь на рассылку</h2>
-        <p class="page-footer-text">Только полезная информация и никакого спама,<br />честное бойскаутское!</p>
+        <h2 class="footer-newsletter-title">Подпишитесь на рассылку</h2>
+        <p class="footer-newsletter-text">Только полезная информация и никакого спама,<br />честное бойскаутское!</p>
         <form class="footer-newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
           <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
             required>
-          <button class="button footer-newsletter-button" type="submit">
-            <span class="visually-hidden">Подписаться</span>
+          <button class="button footer-newsletter-form-button" type="submit">
+            Подписаться
           </button>
         </form>
       </section>
