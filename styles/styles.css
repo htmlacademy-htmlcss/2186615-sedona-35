@@ -1,0 +1,336 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.navigation-link {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: #000000;
+  text-decoration: none;
+  text-align: center;
+}
+
+.navigation-item-enter {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #FFFFFF;
+  background-color: #756157;
+}
+
+.main-index {
+  color: #ffffff;
+  background-color: #000000;
+  background-image: url("../images/index-background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.advantages {
+  background-color: #ffffff;
+}
+
+.main-large-text {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.main-text {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #333333;
+}
+
+.advantages {
+  background-color: #ffffff;
+}
+
+.advantages-item {
+  color: #000000;
+}
+
+.advantages-item-with-picture {
+  color: #FFFFFF;
+  background: #82B3D3;
+}
+
+.advantages-item-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.advantages-item-description {
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+}
+
+.call-to-action {
+  background-color: #ffffff;
+}
+
+.call-to-action-link {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #FFFFFF;
+  background-color: #756157;
+}
+
+.footer-newsletter {
+  color: #ffffff;
+  background-color: #000000;
+  background-image: url("../images/subscribe-background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.footer-newsletter-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.footer-newsletter-text {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.footer-newsletter-form-button {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #82B3D3;
+}
+
+.footer-social-item-link {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: #000000;
+  text-decoration: none;
+}
+
+.footer-contacts-address-phone {
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #000000;
+  text-decoration: none;
+  font-style: normal;
+}
+
+/* Catalog styles */
+
+.main-inner {
+  color: #ffffff;
+  background-color: #000000;
+  background-image: url("../images/catalog/background-filter.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.inner-header-title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+}
+
+.breadcrumbs-link {
+  font-size: 16px;
+  line-height: 21px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.catalog-filter-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
+}
+
+.catalog-filter-item {
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.catalog-filter .submit-button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #82B3D3;
+}
+
+.catalog-filter-clear-link {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.catalog-view-results {
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+.catalog-results {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.catalog-view-select-control {
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+}
+
+.catalog-view-button {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.catalog-housing-results {
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+.catalog-card-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.catalog-card-type {
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+}
+
+.catalog-card-price {
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+  text-align: right;
+}
+
+.catalog-card-button {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.catalog-card-button.button-details {
+  background-color: #756157;
+}
+
+.catalog-card-button.button-favorites {
+  background-color: #82B3D3;
+}
+
+.catalog-card-button.button-favorites-selected {
+  background-color: #7DB54F;
+}
+
+.catalog-card-rating-info {
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333333;
+  background-color: #F2F2F2;
+}
+
+.pagination {
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+.pagination-link {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-decoration: none;
+  background-color:#82B3D3;
+}
+
+.pagination-link.pagination-current {
+  color:#000000;
+  background-color: #F2F2F2;
+}
+
+.pagination-link.pagination-choice {
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+.footer-newsletter-catalog {
+  background-image: none;
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+.footer-newsletter-catalog .footer-newsletter-text {
+  color: #333333;
+}
