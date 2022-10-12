@@ -46,9 +46,10 @@ body {
 .welcome-banner {
   color: #ffffff;
   background-color: #000000;
-  background-image: url("../images/index-background.jpg");
-  background-size: 100% auto;
-  background-repeat: no-repeat;
+  background-image: url("../images/divider.svg"), url("../images/index-background.jpg");
+  background-size: 100% auto, 100% auto;
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom, center;
 }
 
 .main-large-text {
