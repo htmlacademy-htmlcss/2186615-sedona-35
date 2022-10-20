@@ -70,7 +70,7 @@ body {
 }
 
 .navigation-user {
-  max-width: 310px;
+  width: auto;
   margin-left: auto;
   margin-right: 70px;
 }
@@ -234,9 +234,7 @@ body {
 }
 
 .page-footer {
-  display: flex;
   width: 1200px;
-  flex-wrap: wrap;
 }
 
 .footer-newsletter {
@@ -294,6 +292,11 @@ body {
   border: 0;
 }
 
+.footer-container {
+  display: flex;
+  width: 1200px;
+}
+
 .footer-social {
   width: 200px;
   margin-left: 70px;
@@ -302,6 +305,7 @@ body {
 
 .footer-social-list {
   display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
   margin: 0;
 }
