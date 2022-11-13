@@ -634,7 +634,7 @@ body {
   background-color: #000000;
   background-image: url("../images/catalog/background-filter.jpg");
   background-size: 100% auto;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
 }
 
 .inner-header {
@@ -1017,6 +1017,7 @@ body {
   padding: 12px 20px;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
+  background-color: #FFFFFF;
   background-image: url("../images/catalog/select-dropdown-icon.svg");
   background-repeat: no-repeat;
   background-position: right 18px center;
@@ -1042,6 +1043,8 @@ body {
 
 .catalog-view-buttons {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
   margin-left: 70px;
   gap: 8px;
 }
@@ -1246,11 +1249,12 @@ body {
   color: #000000;
   background-color: #FFFFFF;
   display: flex;
+  flex-wrap: wrap;
   padding-left: 70px;
   list-style-type: none;
   margin: 0;
   padding-top: 40px;
-  padding-bottom: 60px;
+  padding-bottom: 52px;
 }
 
 .pagination::before {
@@ -1261,6 +1265,10 @@ body {
   height: 1px;
   background-color: #E6E6E6;
   content: "";
+}
+
+.pagination-item {
+  margin-bottom: 8px;
 }
 
 .pagination-item:not(:last-child) {
@@ -1422,6 +1430,7 @@ body {
   background-image: url("../images/calendar-icon.svg");
   background-repeat: no-repeat;
   background-position: right 22px center;
+  box-sizing: border-box;
   appearance: none;
 }
 
@@ -1462,6 +1471,7 @@ body {
 
 .people-count-field-field {
   box-sizing: border-box;
+  max-height: 48px;
   width: 31px;
   padding: 14px 10px;
   margin: 0;
