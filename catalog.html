@@ -63,7 +63,7 @@
               </a>
             </li>
             <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link" href="#">Гостиницы</a>
+              <a class="breadcrumbs-link-current" href="#">Гостиницы</a>
             </li>
           </ul>
         </header>
@@ -75,20 +75,23 @@
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="control-input" type="checkbox" name="swimming-pool">
-                    Бассейн
+                    <input class="visually-hidden control-input" type="checkbox" name="swimming-pool" checked>
+                    <span class="control-mark"></span>
+                    <span class="control-label">Бассейн</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="control-input" type="checkbox" name="parking">
-                    Парковка
+                    <input class="visually-hidden control-input" type="checkbox" name="parking" checked>
+                    <span class="control-mark"></span>
+                    <span class="control-label">Парковка</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="control-input" type="checkbox" name="wi-fi">
-                    Wi-Fi
+                    <input class="visually-hidden control-input" type="checkbox" name="wi-fi">
+                    <span class="control-mark"></span>
+                    <span class="control-label">Wi-Fi</span>
                   </label>
                 </li>
               </ul>
@@ -99,20 +102,23 @@
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="control-input" type="radio" name="housing-type" value="hotel">
-                    Гостиница
+                    <input class="visually-hidden control-input" type="radio" name="housing-type" value="hotel" checked>
+                    <span class="control-mark"></span>
+                    <span class="control-label">Гостиница</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="control-input" type="radio" name="housing-type" value="motel">
-                    Мотель
+                    <input class="visually-hidden control-input" type="radio" name="housing-type" value="motel">
+                    <span class="control-mark"></span>
+                    <span class="control-label">Мотель</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="control-input" type="radio" name="housing-type" value="apartments">
-                    Апартаменты
+                    <input class="visually-hidden control-input" type="radio" name="housing-type" value="apartments">
+                    <span class="control-mark"></span>
+                    <span class="control-label">Апартаменты</span>
                   </label>
                 </li>
               </ul>
@@ -120,20 +126,33 @@
 
             <fieldset class="catalog-filter-group catalog-filter-group-price">
               <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-              <div class="price-range-slider">
-                <label for="price-min">от</label>
-                <input type="number" id="price-min" name="price-min" min="0" max="12000" value="0">
+              <div class="price-range-slider-fields-wrapper">
+                <div class="price-range-slider-field-wrapper">
+                  <label class="price-range-slider-label" for="price-min">от</label>
+                  <input class="price-range-slider-field price-min-field" type="number" id="price-min" name="price-min" min="0" max="12000" value="0">
+                </div>
 
-                <label for="price-max">до</label>
-                <input type="number" id="price-max" name="price-max" min="0" max="12000" value="9000">
+                <div class="price-range-slider-field-wrapper">
+                  <label class="price-range-slider-label" for="price-max">до</label>
+                  <input class="price-range-slider-field price-max-field" type="number" id="price-max" name="price-max" min="0" max="12000" value="9000">
+                </div>
+              </div>
 
-                <div id="slider-range" class="range-bar"></div>
+              <div class="range-scale">
+                <div class="range-bar" style="width: 226px;">
+                  <button class="range-toggle toggle-min" type="button">
+                    <span class="visually-hidden">Изменить минимальную цену.</span>
+                  </button>
+                  <button class="range-toggle toggle-max" type="button">
+                    <span class="visually-hidden">Изменить максимальную цену.</span>
+                  </button>
+                </div>
               </div>
             </fieldset>
 
             <div class="catalog-filter-buttons">
-              <button class="submit-button" type="submit">Применить</button>
-              <a class="catalog-filter-clear-link" href="">Сбросить</a>
+              <button class="catalog-filter-submit-button" type="submit">Применить</button>
+              <button class="catalog-filter-clear-button" type="reset">Сбросить</a>
             </div>
           </form>
         </section>
@@ -171,7 +190,7 @@
               <span class="catalog-card-type">Гостиница</span>
               <span class="catalog-card-price">От 4000 ₽</span>
               <a class="catalog-card-button button-details" href="#">Подробнее</a>
-              <button class="catalog-card-button button-favorites">В избранное</button>
+              <button class="catalog-card-button button-favorites" type="button">В избранное</button>
               <div class="catalog-card-rating-stars">
                 <span class="rating-star"></span>
                 <span class="rating-star"></span>
@@ -188,7 +207,7 @@
               <span class="catalog-card-type">Гостиница</span>
               <span class="catalog-card-price">От 5000 ₽</span>
               <a class="catalog-card-button button-details" href="#">Подробнее</a>
-              <button class="catalog-card-button button-favorites-selected">В избранном</button>
+              <button class="catalog-card-button button-favorites-selected" type="button">В избранном</button>
               <div class="catalog-card-rating-stars">
                 <span class="rating-star"></span>
                 <span class="rating-star"></span>
@@ -205,7 +224,7 @@
               <span class="catalog-card-type">Гостиница</span>
               <span class="catalog-card-price">От 2500 ₽</span>
               <a class="catalog-card-button button-details" href="#">Подробнее</a>
-              <button class="catalog-card-button button-favorites">В избранное</button>
+              <button class="catalog-card-button button-favorites" type="button">В избранное</button>
               <div class="catalog-card-rating-stars">
                 <span class="rating-star"></span>
                 <span class="rating-star"></span>
@@ -221,7 +240,7 @@
               <span class="catalog-card-type">Гостиница</span>
               <span class="catalog-card-price">От 1500 ₽</span>
               <a class="catalog-card-button button-details" href="#">Подробнее</a>
-              <button class="catalog-card-button button-favorites">В избранное</button>
+              <button class="catalog-card-button button-favorites" type="button">В избранное</button>
               <div class="catalog-card-rating-stars">
                 <span class="rating-star"></span>
                 <span class="rating-star"></span>
