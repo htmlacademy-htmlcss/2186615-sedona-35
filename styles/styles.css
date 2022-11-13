@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: > 2% and last 1 version
+*/
+
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
@@ -19,6 +26,7 @@ input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
+  -webkit-transition: background-color 5000s ease-in-out 0s;
   transition: background-color 5000s ease-in-out 0s;
 }
 
@@ -1021,7 +1029,8 @@ body {
   background-image: url("../images/catalog/select-dropdown-icon.svg");
   background-repeat: no-repeat;
   background-position: right 18px center;
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   cursor: pointer;
 }
 
@@ -1431,7 +1440,8 @@ body {
   background-repeat: no-repeat;
   background-position: right 22px center;
   box-sizing: border-box;
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
 }
 
 .date-field-wrapper-field:hover {
